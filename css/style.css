@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+
+}
+.header{
+    padding: 20px;
+}
+ .container{
+    margin: auto;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul li a{
+    text-decoration: none;
+    color: #0eb4ae;
+    font-weight: bold;
+    font-size: large;
+}
+ul li {
+    display: inline;
+    margin: 0 10px;
+    list-style-type: none;
+}
+.logo {  
+    width: 100px;
+}
+ul li a:hover{
+    background-color: rgba(225, 222, 219, 0.999);
+    border-radius: 20px;
+}
+
+.landing{
+    background-image: url("../images/adventure-alpine-background-black-and-white.jpg");
+    background-size: cover;
+    height: calc(100vh - 80px) ;
+    position: relative;
+}
+.intro-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 350px;
+    max-width: 100%;
+}
+.intro-text h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+        color: #0eb4ae;
+}
+.intro-text p{
+    color: black;
+    text-transform: capitalize;
+}
+
+.features{
+    padding-top:20px ;
+    padding-bottom: 20px;
+}
+.features .container{
+    display: grid;
+    grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;  
+    
+}
+.features .container .feet{
+    background-color: #c7bebe37;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.features .container .feet i{
+    color: #0eb4ae;
+}
+
+.features .container .feet h3{
+    font-weight: 800;
+    margin: 10px 0;
+}
+.services .container, .protfolio .container ,.about .container , .Contact .container{
+    display: block;
+}
+.special-heading{
+    color: rgba(189, 196, 201, 0.795);
+    font-size: 80px;
+    text-align: center;
+    letter-spacing:-3px;
+    margin: 0 ;
+    font-weight: 800;
+}
+.services .container p, .protfolio .container p, .about .container p ,.Contact .container p{
+    text-align: center;
+    margin-top: -45px;
+    margin-bottom: 30px;
+    font-size: 20px;
+
+
+}
+
+.services-content, .protfolio-content {
+
+display: flex;
+flex-wrap: wrap;
+}
+.services-content .text, .protfolio-content .text , .about-us{
+    width: 300px;
+    flex-grow: 1;
+    background-color: #c7bebe37;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+.services-content .text h3, .protfolio-content .text h3{
+    font-weight: 800;
+    margin: 50px 0;
+}
+.services-content .text i{
+    color:#0eb4ae;
+}
+button{
+    background-color: #0eb4ae;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+}
+button:hover{
+    background-color: rgba(189, 196, 201, 0.795);
+    color: black;
+    font-weight: 700;
+}
+.about-us{
+position: relative;
+display: flex;
+width:fit-content;
+justify-content: space-between;
+align-items: center;
+}
+.about-us .text p{
+margin-top: 100px;
+max-width: 50%;  
+
+}
+.about-us img{
+width: 50%;
+}
+.contact-content{
+    margin-top: 60px;
+    background-color: #c7bebe37;
+    border-radius: 20px;
+}
+.contact-content p{
+    color: #211143;
+    font-weight: 900;
+    font-size: large;
+}
+.contact-content .info a{
+    text-decoration: none;
+    color: #0eb4ae;
+    font-weight: 900;
+    font-size: large;
+    padding:0 50px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content .info a:hover{
+    color: rgba(189, 196, 201, 0.795);
+    font-weight: 900;
+}
+.socail{
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.socail i{
+    padding: 20px;
+    color: #0eb4ae;
+}
+
+.footer{
+
+    background-color: #13143a;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+    padding: 20px;
+    color: white;
+}
+.footer span{
+    color: #0eb4ae;
+    font-weight: bold;
+}
+
+@media(min-width:768px) {
+    .container{
+        width:  750px;
+    }
+
+    
+}
+@media(min-width:992px) {
+    .container{
+        width:  970px;
+    }
+}
+@media(min-width:1200px) {
+    .container{
+        width:  1170px;
+    }
+}
